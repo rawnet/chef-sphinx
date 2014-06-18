@@ -1,5 +1,5 @@
 package 'sphinxsearch' do
-  if node['sphinx']['version']
+  if node['sphinx'] && node['sphinx']['version']
     version node['sphinx']['version']
   end
 end
